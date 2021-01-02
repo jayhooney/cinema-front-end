@@ -31,7 +31,7 @@
         </thead>
         <tbody>
           <tr v-for="(movie, index) in movieList" :key="index">
-            <td>{{ movie.openingDt }}</td>
+            <td>{{ movie.openingDate }}</td>
             <td>{{ movie.title }}</td>
             <td>{{ movie.grade }}</td>
             <td>{{ movie.stillShots }}</td>
@@ -88,7 +88,7 @@ export default {
         params: {
           mode: "UPDATE",
           seq: movie.seq,
-          openingDate: movie.openingDt,
+          openingDate: movie.openingDate,
           title: movie.title,
           grade: movie.grade,
           stillShots: movie.stillShots,
