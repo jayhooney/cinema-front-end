@@ -115,6 +115,7 @@ export default {
       axios
         .patch(`/movie/${this.seq}`, data, config)
         .then(res => {
+          this.$router.push("/");
           console.log(res);
         })
         .catch(err => {
