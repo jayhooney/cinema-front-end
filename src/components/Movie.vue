@@ -88,7 +88,7 @@ export default {
         params: {
           mode: "UPDATE",
           seq: movie.seq,
-          openingDate: movie.openingDt,
+          openingDate: movie.openingDate,
           title: movie.title,
           grade: movie.grade,
           stillShots: movie.stillShots,
