@@ -31,7 +31,7 @@
         </thead>
         <tbody>
           <tr v-for="(movie, index) in movieList" :key="index">
-            <td>{{ movie.openingDt }}</td>
+            <td>{{ movie.openingDate }}</td>
             <td>{{ movie.title }}</td>
             <td>{{ movie.grade }}</td>
             <td>{{ movie.stillShots }}</td>
