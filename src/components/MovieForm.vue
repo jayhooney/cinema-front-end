@@ -72,8 +72,7 @@ export default {
         title: this.movie.title,
         grade: Number(this.movie.grade),
         stillShots: this.movie.stillShots,
-        description: this.movie.description,
-        modifier: "root"
+        description: this.movie.description
       };
       const config = {
         headers: {
@@ -101,8 +100,7 @@ export default {
         title: this.movie.title,
         grade: Number(this.movie.grade),
         stillShots: this.movie.stillShots,
-        description: this.movie.description,
-        modifier: "root"
+        description: this.movie.description
       };
       const config = {
         headers: {
