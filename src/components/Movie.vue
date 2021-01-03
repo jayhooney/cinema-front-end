@@ -68,7 +68,6 @@ export default {
         .get("/movie")
         .then(res => {
           this.movieList = res.data;
-          console.log(res);
         })
         .catch(err => {
           console.log(err);
@@ -81,7 +80,6 @@ export default {
       });
     },
     navigateUpdateForm(movie) {
-      console.log(`go to update form with ${JSON.stringify(movie)}`);
       this.$router.push({
         name: "update-movie",
         params: {
@@ -98,9 +96,8 @@ export default {
     deleteMovie(movieSeq) {
       axios
         .delete(`/movie/${movieSeq}`)
-        .then(res => {
+        .then(() => {
           this.fetchData();
-          console.log(res);
         })
         .catch(err => {
           console.log(err);
