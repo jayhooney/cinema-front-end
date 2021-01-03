@@ -80,13 +80,10 @@ export default {
         }
       };
 
-      console.log(data);
-
       axios
         .post("/movie", data, config)
-        .then(res => {
+        .then(() => {
           this.$router.push("/");
-          console.log(res);
         })
         .catch(err => {
           console.log(err);
@@ -108,13 +105,10 @@ export default {
         }
       };
 
-      console.log(data);
-
       axios
         .patch(`/movie/${this.seq}`, data, config)
-        .then(res => {
+        .then(() => {
           this.$router.push("/");
-          console.log(res);
         })
         .catch(err => {
           console.log(err);

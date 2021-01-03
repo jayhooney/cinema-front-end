@@ -1,24 +1,14 @@
-# cinema-front-end
+# 영화목록관리 프런트엔드
 
-## Project setup
-```
-npm install
-```
+## 기술 스택
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+이 프로젝트에 사용된 기술은 아래와 같습니다.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Language: Javascript, html
+- Cloud: AWS EC2
+- FrameWork: Nodejs + Vuejs
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 간단 설명
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 클라이언트는 Nodejs + Vuejs를 사용해 개발하고, EC2 인스턴스에 올려 사용했습니다.
+- 접속 URL : [영화목록 페이지](http://ec2-3-36-70-104.ap-northeast-2.compute.amazonaws.com/)
