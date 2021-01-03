@@ -59,14 +59,13 @@ export default {
     return {
       mode: "",
       isAdmin: false,
-      movieList: null,
-      pageNum: 1
+      movieList: null
     };
   },
   methods: {
-    fetchData(pageNum) {
+    fetchData() {
       axios
-        .get("/movie?page=" + pageNum)
+        .get("/movie")
         .then(res => {
           this.movieList = res.data;
           console.log(res);
@@ -100,7 +99,7 @@ export default {
       axios
         .delete(`/movie/${movieSeq}`)
         .then(res => {
-          this.fetchData(this.pageNum);
+          this.fetchData();
           console.log(res);
         })
         .catch(err => {
@@ -112,7 +111,7 @@ export default {
     }
   },
   created() {
-    this.fetchData(this.pageNum);
+    this.fetchData();
   }
 };
 </script>
